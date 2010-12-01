@@ -13,10 +13,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "time_elapser"
-  gem.homepage = "http://github.com/softr8/time_elapser"
+  gem.homepage = "http://github.com/crowdint/time_elapser"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Time-elapser Query cache helper"
+  gem.description = "Helper to create queries using time intervals helping databases to cache most used queries easier"
   gem.email = "edwin.cruz@crowdint.com"
   gem.authors = ["Edwin Cruz"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
