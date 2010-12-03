@@ -1,18 +1,25 @@
 = time_elapser
 
-Time-elapser Query cache helper
+Time-elapser Create timestamps query caching friendly
 
-= Usage
+== Usage
 TimeElapser.sanitize(interval)
+
 *interval means how often it is going to change
 
-Example - Rails
+== Example - Rails
 
 Product.find(:all, :conditions => ['available_date <= ?', TimeElapser.sanitize(5)])
 
 This will create queries during between 2000-01-01 00:00:00 and 2000-01-01 00:00:04 like this:
+
 select * from products where available_date = '2000-01-01 00:00:00'
+
 Allowing query cache to actually cache the results longer.
+
+== TODO
+
+* Support TimeZone for non rails applications
 
 == Contributing to time_elapser
  
